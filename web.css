@@ -26,14 +26,14 @@ li {
   clear: both;
 }
 h1 {
-  font-size: 24pt;
+  font-size: 175%;
   color: #155765;
   padding: 2mm 0;
   margin: 0;
 }
 
 h2 {
-  font-size: 18pt;
+  font-size: 140%;
   color: #4d2c3d;
   padding: 2mm 0;
   margin: 0;
@@ -71,7 +71,9 @@ a:hover {
 .wrapper {
   position: relative;
   min-height: 100%;
+  /*
   background-color: #155765;
+  */
   max-width: 35cm;
   margin: 0 auto;
   padding: 0;
@@ -101,15 +103,15 @@ a:hover {
   color: white;
   text-align: center;
   width: 100%;
-  padding: 3cm 0 1cm 0;
-  font-size: 36pt;
+  padding: 2mm 0;
+  font-size: 175%;
   font-weight: bold;
 }
 
 /* Small screen: no bulk above banner */
 @media only screen and (max-width: 600px) {
   .banner-heading {
-    padding: 5mm 0;
+    padding: 1mm 0;
   }
 }
 
@@ -121,8 +123,9 @@ a:hover {
 .menubox {
   background-color: #155765;
   color: white;
+  color: #155765;
   text-align: center;
-  margin: 1mm 0; 
+  margin: 2m 0; 
 }
 .navigation { /* table */
   clear: both;
@@ -189,19 +192,22 @@ a:hover {
 
 /* CONTACT */
 .contactbox {
-  width: 60%;
   margin: 0 0 10mm 0;
-  display: block;
+  display: table;
 }
 .contact-left {
   float: left;
-  width: 30%;
   display: block;
 }
 .contact-right {
   float: right;
-  width: 30%;
   display: block;
+  padding: 0 0 0 10mm;
+}
+
+.contactimages img {
+  height: 8mm;
+  padding: 2mm 2mm;
 }
 
 /* Small screen: no contact columns */
@@ -210,26 +216,24 @@ a:hover {
     float: none;
     width: 100%;
   }
+  .contact-right {
+    padding: 0;
+  }
 }
 
 /* FOOTER */
 .footbox {
+  background-color: #155765; 
   bottom: 0;
-  height: 23mm;
   position: absolute;
   width: 100%;
   text-align: center;
   font-size: 10pt;
-  padding-top: 5mm;
+  padding: 5mm 0;
 }
 
-.footnav {
+.footnav, .footnav a {
+  color: white;
 }
 
-.footcontact {
-}
 
-.footcontact img {
-  height: 8mm;
-  padding: 5mm 2mm;
-}
