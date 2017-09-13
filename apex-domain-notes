@@ -1,0 +1,10 @@
+originally (in cPanel), there was a record 
+mayhplumb.com.	1200	IN	A	68.65.120.201
+www.mayhplumb.com.	1200	IN	CNAME	mayhplumb.com
+
+I changed to
+mayhplumb.com.	1200	IN	A	192.30.252.154
+mayhplumb.com.	1200	IN	A	192.30.252.153
+www.mayhplumb.com.	1200	IN	CNAME	mayplumb.github.io
+(per instructions on github)
+
