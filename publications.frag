@@ -1,15 +1,20 @@
 
-<div class="image image-right">
-<img src="img/publicationsb.jpg" alt="May sitting, writing in a notebook." title="May Helena Plumb in Oaxca de Juárez, 2015 - Photo by Maria Vera">
-<div class="caption">
-Taking field notes during a elicitation session in Oaxaca de Juárez, Oaxaca<br/> Photo by Maria Vera
-</div>
-</div>
+<div class="maintext text-block">
+
 
 <div class="blocklink">
 <a href="https://independent.academia.edu/MayHelenaPlumb/CurriculumVitae" target="_blank">Download Full CV (PDF)</a>
 <!-- <a href="doc/cv.pdf" download="MayHelenaPlumbCV.pdf">Download Full CV (PDF)</a> -->
 </div>
+
+
+<h1>Education</h1>
+
+<ul>
+<li><b>University of Texas at Austin</b>, Doctoral studies in linguistics (In Progress)</li>
+<li><b>Haverford College</b>, B.A. in Linguistics (2016) <br/> Thesis: <i><a target="_blank" href="http://triceratops.brynmawr.edu/dspace/handle/10066/17560">Conjunction in Colonial Valley Zapotec</a></i></li>
+</ul>
+
 
 
 <h1>Conference Presentations</h1>
@@ -39,14 +44,6 @@ Plumb, May Helena. 2014. <a href="https://www.academia.edu/6847558/" target="_bl
 Valle</a>. Paper presented at the <i>Coloquio sobre Lenguas Otomangues y Vecinas (COLOV)
 VI: Mario Molina Cruz</i>, Oaxaca City, Mexico.
 </p>
-
-
-<div class="image image-left">
-<img src="img/publications.jpg" alt="May kneeling on a rock, photographing red cave paintings on the rock face." title="May Helena Plumb in San Mateo Macuilxóchitl, 2016 - Photo by Sam Katz">
-<div class="caption">
-Photographing cave paintings in San Mateo Macuilxóchitl, Oaxaca <br/> Photo by Sam Katz
-</div>
-</div>
 
 <h1>Digital Language Resources</h1>
 
@@ -144,5 +141,18 @@ Plumb, and Maria Vera Alvarez. 2015b. <i><a href="http://www.youtube.com/watch?v
 Sánchez Martínez, Hugo, Brook Danielle Lillehaugen, May Helena Plumb, and Helen Margaret Felker. 2015. <i><a href="http://www.youtube.com/watch?v=ESii5hTlAOw" target="_blank">Interview on Santiago Apóstol Zapotec</a></i>.
 </p>
 -->
+
+</div> <!-- .maintext -->
+
+<div class="right-bar">
+<div class="image">
+<img src="img/publications.jpg" alt="May kneeling on a rock, photographing red cave paintings on the rock face." title="May Helena Plumb in San Mateo Macuilxóchitl, 2016 - Photo by Sam Katz">
+<div class="caption">
+Photographing cave paintings in San Mateo Macuilxóchitl, Oaxaca <br/> Photo by Sam Katz
+</div>
+</div>
+
+</div> <!-- .right-bar -->
+
 
 

@@ -76,7 +76,6 @@ a:hover {
   */
   max-width: 35cm;
   margin: 0 auto;
-  padding: 0;
 }
 
 /* Small screen: no wrapper */
@@ -85,15 +84,6 @@ a:hover {
     width: 100%;
     min-width: 5mm;
   }
-}
-
-.body {
-  padding-bottom: 23mm;
-}
-.maintext {
-  margin: 0 0 15mm 0;
-  padding: 2mm 5mm;
-  overflow: auto;
 }
 
 /* TOP */
@@ -150,32 +140,53 @@ a:hover {
   padding: 1mm 0;
 }
 
+/* MAIN BODY */
+
+.body {
+  padding: 0 2mm;
+}
+
+.maintext {
+  float: left;
+  width: 78%;
+  margin: 0 0 15mm 0;
+  overflow: auto;
+}
+
+.push {
+  height: 5mm;
+  clear: both;
+}
+
+
+/* SIDE BARS */
+
+.right-bar {
+  width: 20%;
+  float: right;
+  margin: 0 2mm 0 0;
+}
+
 /* IMAGES */
 
 .image {
-  width: 7cm;
+  max-width: 7cm;
   padding-top: 2mm;
-}
-
-.image-right {
-  float: right;
-  padding-left: 5mm;
-  margin-right: 2mm;
-}
-
-.image-left {
-  float: left;
-  padding-right: 5mm;
 }
 
 /* Small screen: images centered */
 @media only screen and (max-width: 600px) {
   .image img {
-    width: 50%; 
   }
-  .image-left, .image-right {
+  .maintext {
     float: none;
+    width: 100%;
+  }
+  .right-bar {
+    float: none;
+    width: 50%;
     margin: 0 auto;
+    display: none;
   }
 }
 

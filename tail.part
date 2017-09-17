@@ -1,6 +1,8 @@
 
-</div> <!-- .maintext -->
+
 </div> <!-- .body -->
+
+<div class="push"></div> <!-- this keeps footbox from jumping up into floats and adds a little space after body -->
 
 <div class="footbox">
 
