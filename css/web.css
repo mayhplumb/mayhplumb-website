@@ -66,3 +66,18 @@ a:hover {
   border-top: none;
 }
 
+
+/* CAROUSEL */
+
+.carousel-item {
+  height: 50vh;
+  min-height: 400px;
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  right: 0px;
+  left: 0px;
+}
+
