@@ -74,10 +74,20 @@ a:hover {
   min-height: 400px;
 }
 
+.carousel-item-small {
+  height: 35vh;
+  min-height: 400px;
+}
+
 .carousel-caption {
   background: rgba(0,0,0,0.5);
   width: 100%;
   right: 0px;
   left: 0px;
+}
+
+.carousel-item-small .carousel-caption {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
