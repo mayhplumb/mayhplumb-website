@@ -1,0 +1,171 @@
+% A method of formatting CV publications with the year in a separate left-hand column from the rest of the citation. Written up (messily) by May Helena Plumb in July 2018.
+% Feel free to share and use widely! I make no promises about durability or elegance.
+% This uses biblatex, with biber. First run 
+\documentclass[12pt,a4paper,twoside]{article}
+
+%% 1 inch margins
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+
+%% this lets you do things like \linewidth-2ex
+\usepackage{calc}
+
+%% Two sample bib files. I keep separate bib files for my articles, presentations, etc. so that they can appear in different sections.
+\usepackage{filecontents}
+\begin{filecontents}{sample.bib}
+@article{sample1,
+  author = {Person, Name},
+  year = {2018},
+  title = {The latest article},
+  journaltitle = {A Fancy Journal},
+  volume = {82},
+  number = {4},
+  pages = {887--891},
+}
+@article{sample2,
+  author = {Person, Name and Advisor, Great},
+  year = {2017},
+  title = {The second article},
+  journaltitle = {A Good Journal},
+  volume = {3},
+  number = {1},
+  pages = {2--5},
+}
+@article{sample3,
+  author = {Person, Name},
+  year = {2017},
+  title = {The first article},
+  journaltitle = {Some Journal},
+  volume = {92},
+  number = {4},
+  pages = {392--411},
+}
+\end{filecontents}
+\begin{filecontents}{sampleb.bib}
+@book{sampleb1,
+  author = {Person, Name},
+  year = {2036},
+  title = {The latest book},
+  publisher = {Major Academic Press},
+  address = {City},
+}
+@book{sampleb2,
+  author = {Person, Name},
+  year = {2033},
+  title = {An older book},
+  publisher = {Minor Academic Press},
+  address = {City},
+}
+\end{filecontents}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BIBLIOGRAPHY CORE %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% calling the biblatex package:
+\usepackage[
+   backend=biber, % use biber, not bibtex
+   maxbibnames=100, % don't et al.
+   dashed=false, % don't print dashed line in lieu of repeated author
+    style=authoryear, % standard author-year style
+    firstinits=false, % print full author name
+   sorting=ydnt, % sort by year, reverse chronological
+   ]{biblatex}
+   
+%% calling the xpatch package, allowes for the xpatchbibmacro later
+\usepackage{xpatch}
+
+\usepackage[american]{babel}
+\DeclareLanguageMapping{american}{american-apa}
+
+%date off-set year to left
+\newbibmacro*{begentry}{
+  \begin{minipage}[t]{12ex}
+  \printfield{year}%
+  \end{minipage}
+  \begin{minipage}[t]{\textwidth-12ex}
+}
+\newbibmacro*{finentry}{
+  \end{minipage}
+}
+
+% remove date from main entry
+\DeclareFieldFormat{date}{}
+
+% space between bib entries
+\setlength{\bibitemsep}{2ex}
+
+% you need at least one of these in the preamble:
+\addbibresource{sample.bib}
+
+% article etc. titles are bare (no quotes, no italics)
+\DeclareFieldFormat[
+  article,
+  inbook,
+  incollection,
+  inproceedings,
+  patent,
+  thesis,
+  unpublished]
+{title}{#1}
+
+
+% remove "URL:" from before urls
+\DeclareFieldFormat{url}{\url{#1}}
+
+% strip the year of the parentheses
+% https://tex.stackexchange.com/questions/157390/how-to-properly-remove-the-parentheses-around-the-year-in-authoryear-style-v
+\xpatchbibmacro{date+extradate}{%
+  \printtext[parens]%
+}{%
+  \setunit*{\addperiod\space}%
+  \printtext%
+}{}{}
+
+% no "In: " preceding journal titles
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
+
+
+
+
+
+%%%%%
+%% NB: I also format my other sections (education, etc.) to mirror this, using a general "dated item" field
+%% Syntax:  \dateditem{date}{description}
+%
+%% \newcommand{\dateditem}[2]{
+%% \begin{minipage}[t]{12ex} #1 \end{minipage} \hfill
+%% \begin{minipage}[t]{\textwidth-12ex} {#2} \end{minipage}
+%% \vspace{1ex}
+%% }
+%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+\Large
+Curriculum Vitae
+\end{center}
+
+\section{Publications}
+
+\begin{refsection}[sample.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+\section{Books}
+
+\begin{refsection}[sampleb.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+
+\end{document}
