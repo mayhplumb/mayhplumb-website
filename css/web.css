@@ -19,6 +19,10 @@
   background-color: white !important;
 }
 
+.img-row span {
+  vertical-align: center;
+}
+
 .caption {
   font-size: 0.75rem;
   text-align: center;
