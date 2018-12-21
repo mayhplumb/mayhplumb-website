@@ -1,0 +1,166 @@
+% This file has the markup necessary to create two reference sections. The first section is for citing data sources; these are cited in the text with shorthand codes, and those codes are printed in the bibliography. The other is for regular citations, which are printed with the LSA Unified Style (i.e. authoryear)
+
+% May Helena Plumb made this in December 2018, but feel free to do anything you want with it without attribution.
+
+% I took a lot of inspiration from https://tex.stackexchange.com/questions/299064/biblatex-two-bibliographies-with-different-styles-and-sortings
+
+% If you haven't used biblatex/biber before, you may need to do some research on how to do it on your system. But basically, run latex, then run biber on the filename (with no extension), then run latex again.
+
+% OK, let's get started!
+
+\documentclass{article}
+
+% First, we're just going to set up some sample bibliography files.  There are two special parts of a data-reference bibtex: there should be a "keywords = {data}" and a "shorthand = {LABEL}", where LABEL is what you want to show up when you cite the data-reference.
+\usepackage{filecontents}
+
+\begin{filecontents}{references.bib}
+@BOOK{Blevins2004,
+  author    = {Blevins, Juliette},
+  title     = {Evolutionary phonology},
+  place = {Cambridge},
+  publisher = {Cambridge University Press},
+  year      = 2004,
+}
+@ARTICLE{Iverson1983,
+  author    = {Iverson, Gregory K.},
+  title     = {Korean /s/},
+  journal = {Journal of Phonetics},
+  volume = {11},
+  pages = {191--200},
+  year      = 1983,
+}
+@Misc{Sherzer1970-1,
+  author   = {{Olowiktinappi (Speaker, Translator)} and {Joel Sherzer (Researcher)}},
+  title    = {Report of a curing specialist (CUK012R004I001.mp3)},
+  year     = {1970},
+  note     = {Kuna Collection of Joel Sherzer. The Archive of the Indigenous Languages of Latin America, \url{ailla.utexas.org}. Access: public. PID ailla:140735.},
+  keywords = {data},
+  shorthand = {CUK-Text1}
+}
+
+@Misc{Sherzer1970-2,
+  author   = {{Pineda Castrellan Arias, Justina (Speaker)} and {Joel Sherzer (Researcher)}},
+  title    = {Chicha song (CUK008R011I001.mp3)},
+  year     = {1970},
+  note     = {Kuna Collection of Joel Sherzer. The Archive of the Indigenous Languages of Latin America, \url{ailla.utexas.org}. Access: public. PID ailla:119499.},
+  keywords = {data},
+  shorthand = {CUK-Text2}
+}
+
+\end{filecontents}
+
+% Now we call biblatex. We need to use biber. Also, "labelnumber" is required, because we want our data sources list to show a label.  I'm including here my various preferences to get proper linguistics-style citations.
+\usepackage[
+   backend=biber, % use biber, not bibtex
+   maxbibnames=100, % toggle et al. in bibliography
+   maxcitenames=2, % toggle et al. in citations
+   dashed=false, % toggle --- for repeated authors in biblio; an option of authoryear
+   style=authoryear, % style for citations
+   bibstyle=authoryear, % style for bibliography
+  labelnumber, 
+]{biblatex}
+
+% This is required for some extra settings below.
+\usepackage{xpatch}
+
+% And we add our bib file
+\addbibresource{references.bib}
+
+% Just always call hyperref, it makes everything prettier. (In this context, it allows links from citations to bibliography.)
+\usepackage{hyperref}
+
+% Here we're creating a special bibliography style which we'll use for the data sources list.
+\defbibenvironment{biblioDATA}
+  {\list
+     {\printtext[labelnumberwidth]{%
+        [\printfield{prefixnumber}\printfield{labelnumber}]
+        }}
+     {\setlength{\labelwidth}{\labelnumberwidth}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}%
+      \renewcommand*{\makelabel}[1]{\hss##1}}
+  {\endlist}
+  {\item}
+  
+% And now we define a special sorting template to sort by the "shorthand"; if you have multiple with the same shorthand (you shouldn't!) it should sort by author, year, title.
+\DeclareSortingTemplate{byShorthand}{
+  \sort{\field{shorthand}}
+  \sort{\field{name}}
+  \sort{\field{year}}
+  \sort{\field{title}}
+}
+
+% The rest of the preamble is various styling to get the LSA Unified style (to save you some time in case you haven't set up biblatex before).
+
+% The amount of space between bibliography lines.
+\setlength{\bibitemsep}{2ex}
+
+% This specified that, for the included bib types, the title should be in place text. (The default has quotes around titles.)
+\DeclareFieldFormat[
+  article,
+  inbook,
+  incollection,
+  inproceedings,
+  patent,
+  thesis,
+  unpublished]
+{title}{#1}
+
+% This gets ride of "In:" before journal titles.
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
+  
+% This removes "URL:" from before urls
+\DeclareFieldFormat{url}{\url{#1}}
+  
+% This gets ride of the default parentheses around years in the bibliography; see https://tex.stackexchange.com/questions/157390/how-to-properly-remove-the-parentheses-around-the-year-in-authoryear-style-v
+\xpatchbibmacro{date+extradate}{%
+  \printtext[parens]%
+}{%
+  \setunit*{\addperiod\space}%
+  \printtext%
+}{}{}
+
+% This makes sure that you don't print the month and day 
+\AtEveryBibitem{%
+  \clearfield{month}%
+  \clearfield{day}%
+}
+
+% Here are some handy citation commands to define, to allow for easy parenthetical & page citations. You can define as many as you want from this basic idea.
+\newcommand{\citep}[1]{(\cite{#1})} % (Author Year)
+\newcommand{\citet}[1]{\citeauthor{#1} (\citeyear{#1})} % Author (Year)
+\newcommand{\posscitet}[1]{\citeauthor{#1}’s (\citeyear{#1})} % Author's (Year)
+\newcommand{\pgcitep}[2]{(\cite{#1}:~#2)} % (Author Year: Page)
+\newcommand{\pgcitet}[2]{\citeauthor{#1} (\citeyear{#1}:~#2)} % Author (Year: Page)
+
+
+
+
+
+\begin{document}
+
+\section{Hello!}
+
+Some regular citations, like \cite{Blevins2004} and \citet{Iverson1983}.  And some data citations, \cite{Sherzer1970-2}, and \cite{Sherzer1970-1}.
+
+Note that, for example, you can add a timestamp like this: \pgcitep{Sherzer1970-2}{21:02:12}
+
+% We print the data sources first. We need to tell it to sort by shorthand, and to use the special biblioDATA style we defined in the preamble. We also want it to only print citations which have the keyword "data". Also, you can add a note beforehand :)
+\defbibnote{note}{The following data sources are cited in this paper. Special thanks to Joel Sherzer for being, just, you know, amazing.}
+\newrefcontext[sorting=byShorthand]
+\printbibliography[
+   env=biblioDATA,
+   title={Data Sources},
+   keyword=data,
+   prenote=note,
+]
+
+% To bring the regular reference, we need to tell it to sort by the default name-year-title, and we should specify that we DON'T want items which have the keyword "data" (since we already did those!)
+\newrefcontext[sorting=nyt]
+\printbibliography[title={References}, notkeyword=data]
+
+\end{document}
