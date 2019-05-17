@@ -50,6 +50,10 @@ a.post-title {
   color: default;
 }
 
+a.post-tags {
+  color: gray;
+}
+
 /* NAVBAR */
 
 .navbar-brand, .navbar-brand:hover, .nav-link {
@@ -112,7 +116,6 @@ a.post-title {
 
 .post-date {
   color: gray;
-  font-style: italic;
 }
 
 .img-row span {
