@@ -5,6 +5,11 @@
  * colorD: #AB9353 (tan)
  */
 
+body {
+  font-family: Verdana, Arial;
+}
+/* I also like Palatino */
+
 .left-on-mobile {
   text-align: center;
 }
