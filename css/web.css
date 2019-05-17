@@ -19,14 +19,7 @@
   background-color: white !important;
 }
 
-.img-row span {
-  vertical-align: center;
-}
 
-.caption {
-  font-size: 0.75rem;
-  text-align: center;
-}
 
 /* CONTACT */
 
@@ -45,6 +38,11 @@ a {
 a:hover {
   color: #155765;
   text-decoration: none;
+}
+
+a.post-title {
+  text-decoration: none;
+  color: default;
 }
 
 /* NAVBAR */
@@ -105,3 +103,18 @@ a:hover {
   padding-bottom: 10px;
 }
 
+/* SPECIAL PARAGRAPHS */
+
+.post-date {
+  color: gray;
+  font-style: italic;
+}
+
+.img-row span {
+  vertical-align: center;
+}
+
+.caption {
+  font-size: 0.75rem;
+  text-align: center;
+}
