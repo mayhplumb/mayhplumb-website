@@ -1,3 +1,4 @@
 name: May Helena Plumb
 description: May Helena Plumb is a linguist who studies Zapotec languages.
 url: http://www.mayhplumb.com
+permalink: /:categories/:year/:month/:day/:title/
