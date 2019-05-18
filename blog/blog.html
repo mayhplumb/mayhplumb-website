@@ -27,8 +27,9 @@ permalink: /blog/
                     <a class="post-tags" href="/blog/tag/{{ tag_name }}/">{{ tag_name }}</a>
                 {% endfor %}
             </p>
-    		<p>{{ post.excerpt }} (<a href="{{ post.url }}">read more</a>)</p>
-    	</div>
+    		<p>{{post.excerpt}} <a href="{{ post.url }}">[...read more]</a></p>
+    		<!-- {{ post.content | strip_html | truncatewords: 30 }} -->
+        </div>
     </div>
   {% endfor %}
 

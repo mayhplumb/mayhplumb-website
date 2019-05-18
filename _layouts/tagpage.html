@@ -17,7 +17,7 @@ title: Posts tagged {{ page.tag}}
                     <a class="post-tags" href="/blog/tag/{{ tag_name }}/">{{ tag_name }}</a>
                 {% endfor %}
             </p>
-    		<p>{{ post.excerpt }} (<a href="{{ post.url }}">read more</a>)</p>
+    		<p>{{post.excerpt}} <a href="{{ post.url }}">[...read more]</a></p>
     	</div>
     </div>
 {% endfor %}
