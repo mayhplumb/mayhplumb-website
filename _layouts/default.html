@@ -82,6 +82,37 @@
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <!--
+      on popovers and tooltips:
+      https://mdbootstrap.com/docs/jquery/javascript/popovers/
+      http://hiphoff.com/creating-hover-over-footnotes-with-bootstrap/
+    -->
+
+    <!-- JavaScript to enable popovers -->
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover({
+          html:true,
+          trigger:"focus",
+          placement:"auto",
+        });
+      });
+    </script>
+
+    <!-- JavaScript to enable tooltips; give delay before tooltips vanish, and allows for hover-over-box capabilities -->
+    <script>
+      jQuery(document).ready(function() {
+        jQuery('[data-toggle="tooltip"]').each(function() {
+          var $elem = jQuery(this);
+          $elem.tooltip({
+            html:true,
+            container: $elem,
+            delay: {hide:400}
+          });
+        });
+      });
+    </script>
+
   </body>
 
 </html>

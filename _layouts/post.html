@@ -6,13 +6,15 @@ layout: blogpage
   {% include collecttags.html %}
 {% endif %}
 
+{% if site.categories != "" %}
+  {% include collectcategories.html %}
+{% endif %}
+
 <p class="post-date">
     posted {{ page.date | date_to_string }} by {{ page.author }} | 
-    tags:
-    {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a class="post-tags" href="/blog/tag/{{ tag_name }}/">{{ tag_name }}</a>
-    {% endfor %}
+    tags: {% for tag in page.tags %} {% capture tag_name %}{{ tag }}{% endcapture %} <a class="post-tags" href="/blog/tag/{{ tag_name }}/">{{ tag_name }}</a> {% endfor %} |
+    categories: {% for category in page.categories %} {% capture category_name %}{{ category }}{% endcapture %} <a class="post-tags" href="/blog/category/{{ category_name }}/">{{ category_name }}</a> {% endfor %}
+
 </p>
 
 {{ content }}

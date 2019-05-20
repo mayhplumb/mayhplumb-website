@@ -127,3 +127,28 @@ a.post-tags {
   font-size: 0.75rem;
   text-align: center;
 }
+
+/* POP-UPS  (jargon and footnotes) */
+/* see http://hiphoff.com/creating-hover-over-footnotes-with-bootstrap/ */
+/* see https://mdbootstrap.com/docs/jquery/javascript/popovers/ */
+
+.jargon, .footnote {
+  white-space: nowrap; /* prevent line-break... this corrects for weird centering of popovers */
+}
+
+.jargon {
+  font-variant: small-caps;
+}
+
+body {
+    counter-reset: footnotecounter;
+}
+
+.footnote:before {
+  counter-increment: footnotecounter;
+  content: "["counter(footnotecounter)"]";
+  position: relative;
+  top: -0.5em;
+  font-size: 80%;
+}
+
