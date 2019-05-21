@@ -63,12 +63,24 @@ a.post-tags {
 
 /* BUTTONS */
 
-.btn-primary, .btn-primary:hover, .btn-primary:active {
+.btn-primary, .btn-primary:visited {
   color: #ffffff;
   background-color: #402C3D;
   text-decoration: none;
-  border-color: #402C3D;
+  border: 0px;
+  padding: 1mm;
 }
+
+.btn-primary:hover, .btn-primary:active {
+	background-color: #57652A;
+}
+
+/*
+ * colorA: #155765 (blue)
+ * colorB: #57652A (olive)
+ * colorC: #402C3D (plum)
+ * colorD: #AB9353 (tan)
+ */
 
 
 /* CARDS */
