@@ -140,6 +140,15 @@ a.post-tags {
   text-align: center;
 }
 
+span.next, span.previous {
+  color: grey;
+}
+
+.next, .previous, .page_number {
+  padding: 1mm;
+}
+
+
 /* POP-UPS  (jargon and footnotes) */
 /* see http://hiphoff.com/creating-hover-over-footnotes-with-bootstrap/ */
 /* see https://mdbootstrap.com/docs/jquery/javascript/popovers/ */

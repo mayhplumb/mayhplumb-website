@@ -3,7 +3,7 @@ layout: blogpage
 title: Blog - Latest Posts
 ---
 
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <div class="row">
     	<div class="col-lg-12">
     		<h2><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -22,13 +22,13 @@ title: Blog - Latest Posts
   {% else %}
     <span class="previous">Previous</span>
   {% endif %}
-  <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  <span class="page_number">
+    | Page: {{ paginator.page }} of {{ paginator.total_pages }} |
   </span>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">Next</a>
   {% else %}
-    <span class="next ">Next</span>
+    <span class="next">Next</span>
   {% endif %}
 </div>
 

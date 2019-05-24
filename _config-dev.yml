@@ -2,4 +2,9 @@ url: ~/biz/website/www/
 permalink: /:year/:month/:day/:title/
 excerpt_separator: <!--exerpt-->
 
+plugins:
+  - jekyll-paginate
+
+paginate: 2
+paginate_path: "/blog/page:num/"
 
