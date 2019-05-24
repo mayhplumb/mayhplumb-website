@@ -140,10 +140,6 @@ a.post-tags {
   text-align: center;
 }
 
-span.next, span.previous {
-  color: grey;
-}
-
 .next, .previous, .page_number {
   padding: 1mm;
 }
