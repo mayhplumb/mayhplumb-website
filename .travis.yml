@@ -1,3 +1,4 @@
+# This code based on answer from Abdul Rauf on StackOverflow https://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200
 language: ruby
 rvm:
 - 2.3.3
