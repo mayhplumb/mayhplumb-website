@@ -10,4 +10,5 @@ pagination:
   collection: 'posts'
   per_page: 2
   title: ':title - Page :num'
+  sort_reverse: true
 
