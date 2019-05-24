@@ -1,9 +1,68 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Header with Background Image -->
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="May Helena Plumb is a linguist who studies
+    the Zapotec languages.">
+    <meta name="author" content="May Helena Plumb">
+    <meta name="keywords" content="linguistics, linguist, language
+    documentation, Zapotec, Mesoamerica, Otomanguean, May Helena Plumb, Colonial
+    Valley Zapotec, May Plumb, language revitalization">
+    <meta http-equiv="content-language" content="en">
+
+    <title>May Helena Plumb - Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="/css/business-frontpage.css" rel="stylesheet">
+    <link href="/css/half-slider.css" rel="stylesheet">
+    <!-- My custom styles -->
+    <link href="/css/web.css" rel="stylesheet">
+
+    <link href="/feed.xml" rel="alternate" type="application/atom+xml">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">May Helena Plumb</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/publications/">Publications/CV</a>
+            </li>
+            <li class="nav-item active btn dropdown" type="button" >
+              <span class="dropdown-toggle" id="resourcesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</span>
+              <span class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <a class="nav-link" href="/LaTeX/">LaTeX resources</a>
+                <a class="nav-link" href="/grant-apps/">Grant applications</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+
+
+    <!-- Header with Background Image -->
     <!--
     <header class="business-header">
       <div class="container">
@@ -135,7 +194,28 @@ title: Home
 	</div>
 </div>
 
-{% include pub-links.html %}
+<div class="row text-center">
+    <div class="col-md-3">
+        <a class="btn btn-primary btn-sm mt-2" href="https://hcommons.org/members/mayhplumb/" target="_blank">
+            <img height="17mm" src="/img/pub-links/humcom.png"/>  Humanities Commons
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a class="btn btn-primary btn-sm mt-2" href="https://scholar.google.com/citations?user=v7G9PhMAAAAJ" target="_blank">
+            <img height="17mm" src="/img/pub-links/googlescholar.png"/>  Google Scholar
+        </a>
+    </div>
+    <div class="col-md-3 text-center">
+		<a class="btn btn-primary btn-sm mt-2" style="margin: 0;" href="https://www.ailla.utexas.org/islandora/object/ailla:257460" target="_blank">
+            AILLA Collection
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a class="btn btn-primary btn-sm mt-2" href="http://orcid.org/0000-0001-5178-080X" target="_blank">
+            <img height="17mm" src="/img/pub-links/orcid.png"/>  ORCID
+        </a>
+    </div>
+</div>
 
 <!--
 	<div class="col-lg-6">
@@ -143,3 +223,58 @@ title: Home
 		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</div>
 -->
+
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-1 bg-light">
+      <div class="container">
+        <p class="m-0 text-center text-dark">
+        <a rel="license" target="blank" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a> &copy; <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">May Helena Plumb</span>
+      </p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--
+      on popovers and tooltips:
+      https://mdbootstrap.com/docs/jquery/javascript/popovers/
+      http://hiphoff.com/creating-hover-over-footnotes-with-bootstrap/
+    -->
+
+    <!-- JavaScript to enable popovers -->
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover({
+          html:true,
+          trigger:"focus",
+          placement:"auto",
+        });
+      });
+    </script>
+
+    <!-- JavaScript to enable tooltips; give delay before tooltips vanish, and allows for hover-over-box capabilities -->
+    <script>
+      jQuery(document).ready(function() {
+        jQuery('[data-toggle="tooltip"]').each(function() {
+          var $elem = jQuery(this);
+          $elem.tooltip({
+            html:true,
+            container: $elem,
+            delay: {hide:400}
+          });
+        });
+      });
+    </script>
+
+  </body>
+
+</html>
+
