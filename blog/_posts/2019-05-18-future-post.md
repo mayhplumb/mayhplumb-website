@@ -2,6 +2,7 @@
 layout: post
 title: A post in the future
 author: mayhplumb
+tags: testing
 categories: academia
 
 ---

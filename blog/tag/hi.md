@@ -1,9 +1,9 @@
 ---
 layout: tagpage
-title: "Posts tagged fruit"
-tag: fruit
+title: "Posts tagged hi"
+tag: hi
 robots: noindex 
 pagination: 
   enabled: true 
-  tag: fruit 
+  tag: hi 
 ---
