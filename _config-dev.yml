@@ -1,5 +1,5 @@
 url: ~/biz/website/www/
-permalink: /:year/:month/:day/:title/
+permalink: /:categories/:year/:month/:day/:title/
 excerpt_separator: <!--exerpt-->
 
 plugins:
