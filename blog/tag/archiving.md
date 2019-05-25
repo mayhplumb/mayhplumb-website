@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Posts tagged archiving"
+title: "#archiving posts"
 tag: archiving
 robots: noindex 
 pagination: 

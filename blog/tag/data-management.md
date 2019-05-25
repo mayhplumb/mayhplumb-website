@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Posts tagged data-management"
+title: "#data-management posts"
 tag: data-management
 robots: noindex 
 pagination: 

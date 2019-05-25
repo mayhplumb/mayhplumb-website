@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Posts tagged zapotec"
+title: "#zapotec posts"
 tag: zapotec
 robots: noindex 
 pagination: 
