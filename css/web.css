@@ -24,6 +24,18 @@ body {
   background-color: white !important;
 }
 
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
 
 
 /* CONTACT */
@@ -46,7 +58,6 @@ a:hover {
 }
 
 a.post-title {
-  text-decoration: none;
   color: default;
 }
 

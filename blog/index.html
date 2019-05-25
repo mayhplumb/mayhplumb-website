@@ -10,7 +10,7 @@ pagination:
     <div class="row">
     	<div class="col-lg-12">
     		<h2><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
-        {% if post.subtitle != "" %}<h4>{{ post.subtitle }}</h4>{% endif %}
+        {% if post.subtitle != "" %}<h3>{{ post.subtitle }}</h3>{% endif %}
         {% include post-metadata.html %}
     		{% include post-excerpt.html %}
         </div>
