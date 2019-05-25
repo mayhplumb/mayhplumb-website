@@ -1,9 +1,0 @@
----
-layout: tagpage
-title: "Posts tagged fruit"
-tag: fruit
-robots: noindex 
-pagination: 
-  enabled: true 
-  tag: fruit 
----

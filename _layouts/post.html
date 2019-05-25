@@ -10,6 +10,10 @@ layout: blogpage
   {% include collectcategories.html %}
 {% endif %}
 
+{% if page.subtitle != "" %}
+  <h2>{{ page.subtitle }}</h2>
+{% endif %}
+
 <p class="post-date">
     posted {{ page.date | date_to_string }} by {{ page.author }} | 
     tags: {% for tag in page.tags %} {% capture tag_name %}{{ tag }}{% endcapture %} <a class="post-tags" href="/blog/tag/{{ tag_name }}/">{{ tag_name }}</a> {% endfor %}

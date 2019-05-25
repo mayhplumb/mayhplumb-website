@@ -1,12 +1,11 @@
 ---
 layout: post
 title: My first blog post / My first archive deposit
+subtitle: 'Introducing: The Zapotec Collection of May Helena Plumb'
 author: mayhplumb
 tags: archiving data-management zapotec
 
 ---
-
-A brief guide to the “Zapotec Collection of May Helena Plumb”
 
 I’m using inaugural blog post to mark a momentous occasion. My dear friends, I am proud to announce (drumroll) my very first archive deposit! Are you excited? Well, I am. This has been a full year in the making,<a tabindex="0" class="footnote" data-toggle="popover" data-content="I’ll write about why in a future post, probably."></a> and it’s an important part of my research progress.  Here I’m going to answer three questions: (1) What even <i>is</i> an archive? (2) What exactly is in my own archive deposit? And (3) why are archives important?
 
