@@ -6,53 +6,5 @@
     <link>http://www.mayhplumb.com</link>
     <atom:link href="http://www.mayhplumb.com/feed.xml" rel="self" type="application/rss+xml" />
     
-      <item>
-        <title>The egg</title>
-        <description>&lt;p&gt;A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called “plantains”, distinguishing them from dessert bananas. &lt;!--exerpt--&gt;&lt;/p&gt;
-
-&lt;p&gt;The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
-        <link>http://www.mayhplumb.com//2019/05/24/the-egg/</link>
-        <guid isPermaLink="true">http://www.mayhplumb.com//2019/05/24/the-egg/</guid>
-      </item>
-    
-      <item>
-        <title>A post in the future</title>
-        <description>&lt;p&gt;What happens if a make some more posts, but in the future? I want them to look nice.&lt;!--exerpt--&gt;
-Here is an example of a &lt;a tabindex=&quot;0&quot; class=&quot;jargon&quot; data-toggle=&quot;popover&quot; data-content=&quot;&amp;lt;b&amp;gt;Jargon words&amp;lt;/b&amp;gt; are technical terms used only within a certain field. I define them in these boxes so that any readers can understand my writing.&quot;&gt;jargon word&lt;/a&gt;. And I’m going to add a footnote.&lt;a tabindex=&quot;0&quot; class=&quot;footnote&quot; data-toggle=&quot;popover&quot; data-content=&quot;Look, a footnote!&quot;&gt;&lt;/a&gt; And some text after, so I can see some more.&lt;/p&gt;
-
-&lt;p&gt;Here’s some more text in a new paragraph.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
-        <link>http://www.mayhplumb.com//2019/05/18/future-post/</link>
-        <guid isPermaLink="true">http://www.mayhplumb.com//2019/05/18/future-post/</guid>
-      </item>
-    
-      <item>
-        <title>The Banana</title>
-        <description>&lt;p&gt;A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called “plantains”, distinguishing them from dessert bananas. &lt;!--exerpt--&gt;&lt;/p&gt;
-
-&lt;p&gt;The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
-        <link>http://www.mayhplumb.com//2019/05/17/test/</link>
-        <guid isPermaLink="true">http://www.mayhplumb.com//2019/05/17/test/</guid>
-      </item>
-    
-      <item>
-        <title>A past post about fruit</title>
-        <description>&lt;p&gt;What if I put a post in the past? Where does it go?&lt;/p&gt;
-
-&lt;p&gt;The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind, which may be green, yellow, red, purple, or brown when ripe. &lt;!--exerpt--&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 16 May 2019 00:00:00 +0000</pubDate>
-        <link>http://www.mayhplumb.com//2019/05/16/back-post/</link>
-        <guid isPermaLink="true">http://www.mayhplumb.com//2019/05/16/back-post/</guid>
-      </item>
-    
   </channel>
 </rss>
