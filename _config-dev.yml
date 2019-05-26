@@ -9,7 +9,7 @@ plugins:
 pagination:
   enabled: true
   collection: 'posts'
-  per_page: 2
+  per_page: 6
   title: ':title - Page :num'
   sort_reverse: true
 
