@@ -6,6 +6,7 @@ excerpt_separator: <!--exerpt-->
 
 plugins:
   - jekyll-paginate-v2
+  - jekyll-feed
 
 pagination:
   enabled: true

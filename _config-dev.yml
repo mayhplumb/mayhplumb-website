@@ -4,6 +4,7 @@ excerpt_separator: <!--exerpt-->
 
 plugins:
   - jekyll-paginate-v2
+  - jekyll-feed
 
 pagination:
   enabled: true
@@ -11,4 +12,5 @@ pagination:
   per_page: 2
   title: ':title - Page :num'
   sort_reverse: true
+
 
