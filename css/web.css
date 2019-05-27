@@ -65,6 +65,10 @@ a.post-tags {
   color: gray;
 }
 
+h1 a {
+  text-decoration: none;
+}
+
 /* NAVBAR */
 
 .navbar-brand, .navbar-brand:hover, .nav-link {
