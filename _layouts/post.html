@@ -10,16 +10,20 @@ layout: blogpage
   {% include collectcategories.html %}
 {% endif %}
 
-<h2>{{ page.title }}</h2>
+<div class="row">
+	<div class="col-lg-12">
+		
+		<h2>{{ page.title }}</h2>
+		{% if page.subtitle != "" %}
+		<h3>{{ page.subtitle }}</h3>
+		{% endif %}
 
-{% if page.subtitle != "" %}
- <h3>{{ page.subtitle }}</h3>
-{% endif %}
+		<p class="post-date">
+			posted {{ page.date | date_to_string }} by {{ page.author }} | 
+			tags: {% for tag in page.tags %} {% capture tag_name %}{{ tag }}{% endcapture %} <a class="post-tags" href="/blog/tag/{{ tag_name }}/">#{{ tag_name }}</a> {% endfor %}
+		</p>
 
-<p class="post-date">
-    posted {{ page.date | date_to_string }} by {{ page.author }} | 
-    tags: {% for tag in page.tags %} {% capture tag_name %}{{ tag }}{% endcapture %} <a class="post-tags" href="/blog/tag/{{ tag_name }}/">#{{ tag_name }}</a> {% endfor %}
+		{{ content }}
 
-</p>
-
-{{ content }}
+	</div>
+</div>
