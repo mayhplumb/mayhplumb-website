@@ -1,6 +1,6 @@
 url: ~/biz/website/www/
 permalink: /:categories/:year/:month/:day/:title/
-excerpt_separator: <!--exerpt-->
+excerpt_separator: <!--excerpt-->
 
 plugins:
   - jekyll-paginate-v2
