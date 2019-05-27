@@ -37,7 +37,6 @@ h3 {
 }
 
 
-
 /* CONTACT */
 
 .contactimages img {
@@ -185,5 +184,13 @@ body {
 }
 
 .twitter-tweet {
+  margin: auto;
+}
+
+.sm-center {
+  
+}
+
+.center {
   margin: auto;
 }
