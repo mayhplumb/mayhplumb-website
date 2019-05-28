@@ -75,6 +75,12 @@ h1 a {
   color: #155765;
 }
 
+.navbar-nav .btn {
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
 /* BUTTONS */
 
 .btn-primary, .btn-primary:visited {
