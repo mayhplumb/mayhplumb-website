@@ -8,13 +8,21 @@ tags: wugs crafty-linguistics language-acquisition
 
 The short answer is, this is a wug:
 
-<img class="mx-auto d-block" height="100px" alt="A blue bird drawn in a simple cartoon style." title="This is a wug." src="/blog/img/what-is-a-wug/this-is-a-wug.png">
+<div class="row">
+	<div class="col-6 col-sm-6 col-md-4 col-lg-2 center">
+		<img class="mx-auto d-block img-fluid" alt="A blue bird drawn in a simple cartoon style." title="This is a wug." src="/blog/img/what-is-a-wug/this-is-a-wug.png">
+	</div>
+</div>
 
 <!--excerpt-->
 
 The wug was invented by linguist Jean Berko Gleason<a tabindex="0" class="footnote" data-toggle="popover" data-content="I took a selfie with her once. <img width='200px' src='/blog/img/what-is-a-wug/selfie-with-jean.jpg'/>"></a> as part of a language acquisition experiment. Gleason wanted to find out when children learned to make English plurals.  So she drew small creatures with made-up names, like the wug, and set up a task where children were prompted to say plural forms of the words. The prompt looked like this:
 
-<img class="mx-auto d-block"  height="500px" alt="A drawing of a bird is followed by the text 'This is a wug'. Two more birds are followed by the text 'Now there is another one. There are two of them. There are two _'" title="If you have a high-quality image of one of the other animals, let me know." src="/blog/img/what-is-a-wug/this-is-a-wug-test.png">
+<div class="row">
+	<div class="col col-sm-9 col-md-6 col-lg-4 center">
+		<img class="mx-auto d-block img-fluid"  alt="A drawing of a bird is followed by the text 'This is a wug'. Two more birds are followed by the text 'Now there is another one. There are two of them. There are two _'" title="If you have a high-quality image of one of the other animals, let me know." src="/blog/img/what-is-a-wug/this-is-a-wug-test.png">
+	</div>
+</div>
 
 The English plural of <i>wug</i> would be pronounced with a [z] sound on the end, [wʌgz].  If children produce this form, it means they've learned a general rule about creating English plurals, rather than simply memorizing the singular and plural of each noun. Gleason found that most preschoolers know how to make this plural (76%), and that almost all children aquire it by around age six (97% of first-graders).  She published these results in an 1958 article "The Child's Learning of English Morphology".<a tabindex="0" class="footnote" data-toggle="popover" data-content="The offical article is <a target='_blank' title='official page at Taylor &amp; Francis' href='https://doi.org/10.1080/00437956.1958.11659661'>here</a>.  There's currently a free PDF <a target='_blank' title='PDF from Western University' href='https://anthropology.uwo.ca/faculty/creider/027/wugs.pdf'>here</a>."></a>  
 
