@@ -55,7 +55,7 @@ Finally, in Class 3, the past form has the prefix <i>b-</i>, but also the <i>g</
     </tbody>
 </table>
 
-I've seen some other patterns in Tlacochahuaya Zapotec verbs, but it would be too much to discuss here. Zapotec verb classes can be <i>very</i> complicated, but that makes them very exciting thing to study!
+I've seen some other patterns in Tlacochahuaya Zapotec verbs, but it would be too much to discuss here. Zapotec verb classes can be <i>very</i> complicated, but that makes them very exciting to study!
 
 Want to learn more? There's lots to know about verbs...
 <ul>
