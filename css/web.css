@@ -120,6 +120,32 @@ h1 a {
   border-top: none;
 }
 
+/* TABLES */
+
+table {
+  margin-bottom: 10px !important;
+  border-style: solid none;
+  border-width: 2px 0px;
+}
+
+thead {
+  border-bottom: 1px solid black;
+}
+
+th {
+  font-weight: normal;
+}
+
+td {
+  padding: 1mm 3mm;
+}
+
+caption {
+  text-align: center;
+  color: inherit;
+  caption-side: bottom;
+  padding: 2mm 0mm 0mm 0mm;
+}
 
 /* CAROUSEL */
 
