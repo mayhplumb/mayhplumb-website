@@ -203,6 +203,10 @@ caption {
   font-variant: small-caps;
 }
 
+.foreign {
+  font-style: italic;
+}
+
 body {
     counter-reset: footnotecounter;
 }
