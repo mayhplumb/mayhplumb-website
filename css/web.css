@@ -120,6 +120,17 @@ h1 a {
   border-top: none;
 }
 
+.collapse .card-body {
+  border-color: #402C3D;
+}
+
+/*
+ * colorA: #155765 (blue)
+ * colorB: #57652A (olive)
+ * colorC: #402C3D (plum)
+ * colorD: #AB9353 (tan)
+ */
+
 /* TABLES */
 
 table {
