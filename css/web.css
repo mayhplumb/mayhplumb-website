@@ -158,6 +158,16 @@ caption {
   padding: 2mm 0mm 0mm 0mm;
 }
 
+table.interlinear {
+  border-width: 0px;
+  border-left: 1px solid black;
+  margin-left: 10mm;
+}
+
+table.interlinear .parts-of-speech {
+  font-variant: small-caps;
+}
+
 /* CAROUSEL */
 
 .carousel-item {
