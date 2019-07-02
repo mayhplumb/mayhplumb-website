@@ -3,7 +3,7 @@ layout: post
 title: Lessons in fieldwork self-care
 subtitle: (an ongoing area of study)
 author: mayhplumb
-tags: fieldwork2019 self-care
+tags: fieldwork2019 personal self-care
 
 ---
 
