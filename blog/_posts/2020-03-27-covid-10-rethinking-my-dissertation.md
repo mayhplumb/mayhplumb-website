@@ -12,6 +12,8 @@ There are many things to write about COVID-19 and how it’s impacting graduate 
 
 The <a target="_blank" href="eldp.net/">Endangered Language Documentation Programme</a> (ELDP), one of the major funding agencies of linguistic fieldwork, announced on March 20 that they will not be reviewing applications submitted during the 2020 cycle:
 
+<!--excerpt-->
+
 <blockquote style="margin-left: 5em; margin-right: 5em;">"In light of the current COVID-19 crisis, and after many consultations and careful consideration, ELDP has decided to cancel the 2020 grant round. Given the global developments and required restrictions, ELDP will not be able to support any work that involves fieldwork or any other kind of travel and face to face interaction for the coming year."</blockquote>
 
 This is the right decision on ELDP’s part. However, it’s anxiety provoking for graduate students who might have submitted an application to start fieldwork this coming fall, as delaying fieldwork could mean adding an extra year to their dissertation process. 
