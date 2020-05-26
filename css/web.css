@@ -27,15 +27,15 @@ body {
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 2.2em;
 }
 
 h2 {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 
@@ -75,7 +75,10 @@ h1 a {
 .navbar-brand, .navbar-brand:hover, .nav-link {
   text-decoration: none;
   color: #155765;
-  font-size: 1.3em;
+}
+
+.navbar-brand, .nav-item {
+  font-size: 1.2em;
 }
 
 .navbar-nav .btn {
@@ -172,6 +175,10 @@ table.interlinear .parts-of-speech {
 }
 
 /* CAROUSEL */
+
+.carousel {
+  padding-bottom: 2mm;
+}
 
 .carousel-item {
   height: 50vh;
