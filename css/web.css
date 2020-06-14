@@ -145,7 +145,7 @@ a.img-link {
 
 .card-title {
   border-bottom: 1px solid rgba(0,0,0,.125);
-  padding: 1rem 1.25rem;
+  padding: 3mm 0;
   margin: 0;
 }
 
@@ -245,8 +245,7 @@ table.interlinear .parts-of-speech {
 }
 
 .caption {
-  font-size: 0.75rem;
-  text-align: center;
+  font-size: 0.8em;
 }
 
 .next, .previous, .page_number {
