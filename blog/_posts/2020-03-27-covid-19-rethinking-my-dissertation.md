@@ -2,7 +2,7 @@
 layout: post
 title: 'Graduate school in the time of COVID-19: Rethinking my dissertation'
 author: mayhplumb
-tags: covid-19 personal fieldwork
+tags: covid-19 personal fieldwork mays-dissertation
 
 ---
 
