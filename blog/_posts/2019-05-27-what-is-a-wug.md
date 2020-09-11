@@ -36,6 +36,7 @@ Wugs are just so cute, they became the unoffical mascot of linguistics.  You'll 
 Want to learn more? Wugs are all over the place.
 
 <ul>
+	<li><a target="_blank" href="https://lingthusiasm.com/wugs">Lingthusiasm's excellent FAQ on wugs (including information about copyright)</a></li>
 	<li><a target="_blank" title="watch the video on YouTube" href="https://youtu.be/1Lb6phcDte4">"The Wug Test"</a> by The Ling Space</li>
 	<li><a target="_blank" title="the podcast transcript" href="https://lingthusiasm.com/post/170650662718/transcript-lingthusiasm-episode-16-learning-parts">"Learning parts of words -  Morphemes and the wug test"</a> by Lingthusiasm</li>
 	<li><a target="_blank" title="PDF on Google Drive" href="https://drive.google.com/file/d/0B0tzldu_jPd2WUdhMlc5SFFVX0JkZmpCdjdfTk1nMGpGcU9F/">Wug crochet pattern</a></li>
