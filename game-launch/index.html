@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Happy Hour Game Launch Page</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/startbootstrap-agency.css" rel="stylesheet" />
+        <!-- Custom CSS-->
+        <link href="css/custom.css" rel="stylesheet" />
+    </head>
+    <body id="page-top" style="background-color: #005f86;">
+        <div class="container">
+            <section class="page-section bg-light" style="margin-top: 1cm;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Happy Hour Game Launch Page</h2>
+
+                    <h2>To make a new game</h2>
+
+                    <p>Click the appropriate link and follow the instructions to create a game.<br> Then copy &amp; paste the game link into your local chat to invite others!</p>
+                    <div class="row">
+                        <div class="col-lg-3">
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="btn btn-primary btn-l" href="https://setwithfriends.com">Set</a>
+                        </div>
+                        <div class="col-lg-3">
+                            <a class="btn btn-primary btn-l" href="https://codenames.game/">Codenames</a>
+                        </div>
+                        <div class="col-lg-3">
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <h2>To join a game</h2>
+                    <p>Copy &amp; paste the game link below.</p>
+
+                    <input type="text" id="link"></input>
+                    <a class="btn btn-primary btn-l" onClick="joinGame();">Join Game!</a>
+                    <script type="text/javascript">
+                        function joinGame(){
+                            window.location.href = document.getElementById("link").value;
+                        }
+                    </script>
+
+                    
+                </div>
+            </div>
+        </section>
+    </div> <!-- extra container -->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+                    
+    </body>
+</html>
