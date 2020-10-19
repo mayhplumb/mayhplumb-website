@@ -1,0 +1,63 @@
+.bg-bright {
+	background-color: #579d42 !important;
+}
+
+a {
+	color: #005f86;
+}
+
+a:hover {
+	color: #00a9b7;
+}
+
+.btn-primary {
+    color: white !important;
+    background-color: #005f86;
+    border: 1mm solid #005f86;
+}
+
+.btn-primary:hover {
+    color: white !important;
+    background-color: #333f48;
+    border: 1mm solid #333f48;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    color: white !important;
+    background-color: #333f48;
+    border: 1mm solid #333f48;
+}
+
+header.masthead {
+	background-image: url("../img/masthead.jpg");
+}
+
+#mainNav .navbar-brand img {
+    height: 3rem;
+}
+
+#mainNav.navbar-shrink .navbar-brand img {
+    height: 3rem;
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+	background-color: #333f48;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #f8971f;
+}
+
+h4.section-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    background: rgba(0, 95, 134, 0.9);
+}
