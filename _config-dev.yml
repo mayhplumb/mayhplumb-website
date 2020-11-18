@@ -1,0 +1,16 @@
+url: ~/biz/website/www/
+permalink: /:categories/:year/:month/:day/:title/
+excerpt_separator: <!--excerpt-->
+
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-feed
+
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 6
+  title: ':title - Page :num'
+  sort_reverse: true
+
+
