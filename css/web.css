@@ -51,6 +51,10 @@ h3 {
   font-size: 1.2em;
 }
 
+.text-white-80 {
+    color: rgba(255,255,255,.8) !important;
+}
+
 
 /* CONTACT */
 
@@ -76,7 +80,7 @@ a.post-title {
 }
 
 a.post-tags {
-  color: gray;
+  color: dimgray;
 }
 
 h1 a {
@@ -237,7 +241,7 @@ table.interlinear .parts-of-speech {
 /* SPECIAL PARAGRAPHS */
 
 .post-date {
-  color: gray;
+  color: dimgray;
 }
 
 .img-row span {
