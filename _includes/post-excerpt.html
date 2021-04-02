@@ -1,2 +1,5 @@
-<p>{{post.excerpt}} <a href="{{ post.url }}">[...read more]</a></p>
+<p>{{post.excerpt}}
+    {% if post.content > post.excerpt %}
+    	<a href="{{ post.url }}">[...read more]</a></p>
+    {% endif %}
 <!-- {{ post.content | strip_html | truncatewords: 30 }} -->
